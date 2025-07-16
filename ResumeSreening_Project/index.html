@@ -1,0 +1,199 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Screening System</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            width: 500px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+         {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        textarea, input[type="file"], input[type="submit"] {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Screening System</h1>
+        <form method="POST" enctype="multipart/form-data">
+         
+
+
+         <label>   Select Required Skills:</lable><br>
+<input type="checkbox" name="skills" value="Python"> Python
+<input type="checkbox" name="skills" value="Flask"> Flask
+<input type="checkbox" name="skills" value="Machine Learning"> Machine Learning
+<input type="checkbox" name="skills" value="SQL"> SQL
+<input type="checkbox" name="skills" value="JavaScript"> JavaScript
+<input type="checkbox" name="skills" value="Java"> Java
+<input type="checkbox" name="skills" value="HTML"> HTML
+<input type="checkbox" name="skills" value="CSS"> CSS
+<input type="checkbox" name="skills" value="Data Structures"> Data Structures
+<input type="checkbox" name="skills" value="MongoDB">MongoDB
+<input type="checkbox" name="skills" value="ReactJS">Reactjs
+
+<br><br>
+
+
+           <lable> Select Resume Files (.pdf / .docx / .txt):</lable>
+            <input type="file" name="resumes" multiple required>
+
+            <input type="submit" value="Check Match">
+        </form>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Screening System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+
+             background-image: url('static/bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: 'Segoe UI', sans-serif;
+        border:1.5px solid #583d23ff;
+        height: 100vh;
+        boder-radius: 5px;
+
+        }
+        .container {
+            max-width: 600px;
+            margin-top: 145px;
+            background: #fff;
+            border: 2px solid #7b2153ff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        .btn-primary {
+            width: 100%;
+            font-weight: bold;
+            background-color: #007bff;
+            border: none;
+        }
+        .form-check {
+            margin-right: 15px;
+            margin-bottom: 10px;
+        }
+        .skill-group {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🚀 Resume Screening System</h2>
+
+        <form method="POST" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label class="form-label fw-bold">Select Required Skills:</label>
+                <div class="skill-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="skills" value="Python" id="python">
+                        <label class="form-check-label" for="python">Python</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="skills" value="Flask" id="flask">
+                        <label class="form-check-label" for="flask">Flask</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="skills" value="Machine Learning" id="ml">
+                        <label class="form-check-label" for="ml">Machine Learning</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="skills" value="SQL" id="sql">
+                        <label class="form-check-label" for="sql">SQL</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="skills" value="JavaScript" id="js">
+                        <label class="form-check-label" for="js">JavaScript</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="skills" value="HTML" id="html">
+                        <label class="form-check-label" for="html">HTML</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="skills" value="CSS" id="css">
+                        <label class="form-check-label" for="css">CSS</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="skills" value="Java" id="java">
+                        <label class="form-check-label" for="java">Java</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="skills" value="MongoDB" id="mongo">
+                        <label class="form-check-label" for="mongo">MongoDB</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="skills" value="Reactjs" id="react">
+                        <label class="form-check-label" for="react">Reactjs</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="resumes" class="form-label fw-bold">Upload Resume Files (.pdf / .docx / .txt):</label>
+                <input class="form-control" type="file" id="resumes" name="resumes" multiple>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Check Match</button>
+        </form>
+    </div>
+</body>
+</html>
